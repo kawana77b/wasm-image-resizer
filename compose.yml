@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    container_name: wasm-image-resizer
+    command: sh -c "pnpm run preview"
+    tty: true
+    ports:
+      - 3000:3000
